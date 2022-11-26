@@ -1,0 +1,75 @@
+configuration {
+	modi:				"drun";
+	font:				"RobotoMono 10";
+	display-drun: 			"";
+	sidebar-mode: 			false;
+}
+
+@theme "/dev/null"
+
+* {
+	background-color:		#ABB2BF00;
+	text-color:			#FFFFFF;
+}
+
+window {
+	transparency:                   "real";
+	border-radius:                  10px;
+	width:			    	30%;
+	y-offset:                       10px;
+	padding: 			20px;
+	location: 			center;
+}
+
+prompt { enabled: false; }
+
+entry {
+	placeholder:			"Search";
+	expand:                         true;
+	padding:                        5px 2% 5px 2%;
+	background-color:               #FFFFFF;
+        placeholder-color:              #282C34;
+}
+
+inputbar {
+	children: 			[ prompt, entry ];
+	background-color:               #FFFFFF;
+	text-color:                     #282C34;
+	expand:                         false;
+	border-radius:                  10px;
+	padding:                        8px;
+}
+
+listview {
+	columns:                        1;
+	lines:	                        5;
+	cycle:                          false;
+	dynamic:                        true;
+	layout:                         vertical;
+}
+
+mainbox {
+	children:                       [ inputbar, listview ];
+	spacing:                       	2%;
+	padding:                        2% 1% 2% 1%;
+}
+
+element {
+	orientation:                    vertical;
+	border-radius:                  0%;
+	padding:                        1.5% 0% 1.5% 0%;
+}
+
+element-text {
+	expand:                         true;
+	vertical-align:                 0.5;
+	margin:                         0.5% 3% 0% 3%;
+	background-color:               inherit;
+        text-color:                     inherit;
+}
+
+element selected {
+	background-color:               #282C34;
+	text-color:                     #FFFFFF;
+	border-radius:                  10px;
+}
