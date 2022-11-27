@@ -1,1 +1,1 @@
-[https://github.com/Cute-Ducky/Duckfiles/blob/main/Pictures/LogoLight.PNG]()
+![logo](https://github.com/Cute-Ducky/Duckfiles/blob/main/Pictures/LogoLight.PNG)
